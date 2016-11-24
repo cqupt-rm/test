@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>向上无缝滚动</title>
+	<link rel="stylesheet" type="text/css" href="css/无缝滚动.css">
+	<script type="text/javascript" src='js/无缝滚动.js'></script>
+</head>
+<body>
+	<div id="mooc">
+		<h3 id="moocTitle">卡尔技能大全 <a href="#" target="_self">更多>></a></h3>
+		<div id="moocBox">
+			<ul id="con1">
+				<li><a href="#">一：急速冷却 (快捷键Y)</a><span>技能 组合——QQQ-R</span></li>
+				<li><a href="#">二：寒冰之墙 (快捷键G)</a><span>技能 组合——QQE-R</span></li>
+				<li><a href="#">三：幽灵漫步 (快捷键V)</a><span>技能 组合——QQW-R</span></li>
+				<li><a href="#">四：灵动迅捷 (快捷键Z)</a><span>技能 组合——WWE-R</span></li>
+				<li><a href="#">五：强袭飓风 (快捷键X)</a><span>技能 组合——WWQ-R</span></li>
+				<li><a href="#">六：电磁脉冲 (快捷键C)</a><span>技能 组合——WWW-R</span></li>
+				<li><a href="#">七：阳炎冲击 (快捷键T)</a><span>技能 组合——EEE R</span></li>
+				<li><a href="#">八：熔炉精灵 (快捷键F)</a><span>技能 组合——EEQ-R</span></li>
+				<li><a href="#">九：浑沌陨石 (快捷键D)</a><span>技能 组合——EEW-R</span></li>
+				<li><a href="#">十：超震声波 (快捷键B)</a><span>技能 组合——QWE-R</span></li>
+			</ul>
+			<ul id="con2"></ul>
+		</div>
+	</div>
+
+
+	<!-- <script type="text/javascript">
+ var area = document.getElementById('moocBox');
+ var con1 = document.getElementById('con1');
+ var con2 = document.getElementById('con2');
+ var speed = 50;
+ area.scrollTop = 0;
+ con2.innerHTML = con1.innerHTML;
+ function scrollUp(){
+	 if(area.scrollTop >= con1.scrollHeight) {
+		 area.scrollTop = 0;
+		 }else{
+		   area.scrollTop ++; 
+		 } 
+}
+var myScroll = setInterval("scrollUp()",speed);
+area.onmouseover = function(){
+	 clearInterval(myScroll);
+	}
+area.onmouseout = function(){
+	 myScroll = setInterval("scrollUp()",speed);
+	}
+ </script> -->
+
+</body>
+</html>

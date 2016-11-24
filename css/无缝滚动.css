@@ -1,0 +1,82 @@
+body {
+	font-size: 12px;
+	line-height: 24px;
+	/*text-align: center;*/
+	/*text在其父元素中居中，即mooc中居中 而不是在body中居中*/
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+/*a img{
+	border: none;
+}*/
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	color: #ff0000;
+}
+#mooc{
+	width: 399px;
+	/*没有设置width时块状元素占满一整行  设置了width元素就固定宽度且左对齐*/
+	border: 5px solid #ababab;
+	border-radius: 15px;
+	box-shadow: 2px 2px 10px #ababab;
+	margin: 50px auto 0;
+	text-align: left;
+}
+#moocTitle{
+	height: 62px;
+	/*overflow: hidden;*/
+	font-size: 26px;
+	line-height: 62px;
+	padding-left: 30px;
+	background-image: -webkit-linear-gradient(top,yellow,purple);
+	/*border: 1px solid #f05e6f;*/
+	border-radius: 8px 8px 0 0;
+	color: #fff;
+	position: relative;
+
+}
+#moocTitle a{
+	position:absolute;
+	right: 10px;
+	bottom: 10px;
+	/*display: inline;*/
+	/*color: #fff;*/
+	/*如果设置了字体颜色会覆盖掉hover效果*/
+	font-size: 12px;
+	line-height: 24px;
+	/*行高包括字的高度和上下间距*/
+}
+#moocBox{
+	height: 144px;
+	width: 335px;
+	margin-left: 25px;
+	margin-top:10px;
+	overflow: hidden;
+
+}
+#mooc ul li{
+	height: 24px;
+}
+/*子元素双浮动 所以要设置行高使之撑起来*/
+#mooc ul li a{
+	width: 180px;
+	display: block;
+	float: left;
+	/*float是为了取消块状元素占满一行的特性*/
+	/*overflow: hidden;*/
+	text-indent: 15px;
+	/*height: 24px;*/
+
+}
+#mooc ul li span{
+	float: right;
+	color: #999;
+}
